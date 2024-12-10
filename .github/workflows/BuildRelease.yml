@@ -49,7 +49,7 @@ jobs:
               run: |
                 name=$(< ./generated/releaseName.txt)
                 name=$(echo $name | tr '\n' ' ')
-                image="![releaseImage](https://github.com/Arcticons-Team/Arcticons/blob/$GITHUB_REF_NAME/generated/releaseImage.jpg)"
+                image="![releaseImage](https://raw.githubusercontent.com/Arcticons-Team/Arcticons/refs/tags/$GITHUB_REF_NAME/generated/releaseImage.jpg)"
                 changelog=$(< ./generated/changelog.md)
                 changelog="$changelog
 
