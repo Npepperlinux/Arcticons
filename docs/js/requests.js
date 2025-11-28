@@ -1,5 +1,5 @@
 // Array of Link Images
-const imageNames = ['img/requests/google-play-store.svg', 'img/requests/f-droid.svg', 'img/requests/izzyondroid.svg', 'img/requests/galaxystore.svg', 'img/requests/search-globe.svg'];
+const imageNames = ['img/requests/google-play-store.svg', 'img/requests/f-droid.svg', 'img/requests/izzyondroid.svg', 'img/requests/galaxystore.svg', 'img/requests/mi-store.svg', 'img/requests/rustore.svg', 'img/requests/search-globe.svg'];
 let appEntriesData = []; // Store the original data for sorting
 var appEntriesDataGlobal = []; // Currently displayed data
 var appEntriesDataFiltered = []; // Filtered data based on category
@@ -77,6 +77,8 @@ fetch(`assets/requests.json`)
                 `<a href="https://f-droid.org/en/packages/${componentInfo.split('/')[0]}/" class="links" id='fdroid' target="_blank"><img src="img/requests/f-droid.svg" alt="Image"></a>`,
                 `<a href="https://apt.izzysoft.de/fdroid/index/apk/${componentInfo.split('/')[0]}" class="links" id='izzy' target="_blank"><img src="img/requests/izzyondroid.svg" alt="Image"></a>`,
                 `<a href="https://galaxystore.samsung.com/detail/${componentInfo.split('/')[0]}" class="links" id='galaxy' target="_blank"><img src="img/requests/galaxystore.svg" alt="Image"></a>`,
+                `<a href="https://app.mi.com/details?id=${componentInfo.split('/')[0]}" class="links" id='xiaomi' target="_blank"><img src="img/requests/mi-store.svg" alt="Image"></a>`,
+                `<a href="https://www.rustore.ru/catalog/app/${componentInfo.split('/')[0]}" class="links" id='ru' target="_blank"><img src="img/requests/rustore.svg" alt="Image"></a>`,
                 `<a href="https://www.ecosia.org/search?q=${componentInfo.split('/')[0]}" class="links" target="_blank"><img src="img/requests/search-globe.svg" alt="Image"></a>`
             ].join('\n');
             // Process each entry and store data    
