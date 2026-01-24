@@ -69,11 +69,11 @@ export function lazyLoadAndRender() {
     const sentinelRect = DOM.sentinel.getBoundingClientRect();
     const containerRect = DOM.requestsTableContainer.getBoundingClientRect();
     if (sentinelRect.top  < containerRect.bottom + 300 && state.startIndex < state.view.length) {
-        // Use setTimeout to allow the browser to breathe and 
+        // Use setTimeout to allow the browser to breathe and
         // prevent "too much recursion" error
         setTimeout(() => {
             lazyLoadAndRender();
-        }, 50); 
+        }, 50);
     }
 }
 
@@ -112,6 +112,14 @@ export function getrowMenu(pkg) {
       <div class="btn-container" tabindex="0" role="menuitem"
         onclick="window.open('${urls.galaxyStore}${pkg}')">
         <img src="${imagepath.galaxyStore}"> <span>Galaxy Store</span>
+      </div>
+      <div class="btn-container" tabindex="0" role="menuitem"
+        onclick="window.open('${urls.miStore}${pkg}')">
+        <img src="${imagepath.miStore}"> <span>Mi Store</span>
+      </div>
+      <div class="btn-container" tabindex="0" role="menuitem"
+        onclick="window.open('${urls.ruStore}${pkg}')">
+        <img src="${imagepath.ruStore}"> <span>RuStore</span>
       </div>
       <div class="btn-container" tabindex="0" role="menuitem"
         onclick="window.open('${urls.wwwSearch}${pkg}')">

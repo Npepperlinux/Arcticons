@@ -4,6 +4,8 @@ export const imagepath = {
     fdroid: '/dashboard/img/icon-fdroid.svg',
     izzyOnDroid: '/dashboard/img/icon-izzy.svg',
     galaxyStore: '/dashboard/img/icon-galaxy.svg',
+    miStore: '/dashboard/img/icon-miStore.svg',
+    ruStore: '/dashboard/img/icon-rustore.svg',
     wwwSearch: '/dashboard/img/icon-web.svg',
     download: '/dashboard/img/icon-download.svg',
     copy: '/dashboard/img/icon-copy.svg',
@@ -15,6 +17,8 @@ export const urls = {
     fdroid: `https://f-droid.org/en/packages/`,
     izzyOnDroid: 'https://apt.izzysoft.de/fdroid/index/apk/',
     galaxyStore: 'https://galaxystore.samsung.com/detail/',
+    miStore: 'https://app.mi.com/details?id=',
+    ruStore: 'https://www.rustore.ru/catalog/app/',
     wwwSearch: 'https://www.ecosia.org/search?q=',
 }
 
